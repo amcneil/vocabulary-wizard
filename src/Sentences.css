@@ -1,0 +1,63 @@
+.sentences-page-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-page-content {
+  flex-direction: column;
+}
+
+.main-title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.instructions-box {
+  padding: 20px;
+  background-color: lightblue;
+  border: 1px solid gray;
+}
+
+.sentences-instruction-bullet {
+  text-align: left;
+  padding-bottom: 18px;
+}
+
+.bulletpoint {
+  height: 23px;
+}
+
+.bullet-text {
+  font-size: 1.05em;
+}
+
+.Word-list-title {
+  margin-top: 35px;
+  margin-bottom: 12px;
+  font-size: 1.2em;
+}
+
+.word-list-sentence-box {
+  height: 300px;
+  width: 600px;
+  overflow: auto;
+  margin-bottom: 15px;
+}
+
+.word-list-submit {
+  background-color: lightblue;
+  border-radius: 4px;
+}
+
+.word-list-submit:hover {
+  background-color: rgb(184, 235, 252);
+}
+
+@media only screen and (max-width: 620px) {
+  .word-list-sentence-box {
+    width: 90vw;
+  }
+}

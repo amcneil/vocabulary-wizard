@@ -1,0 +1,100 @@
+/* Navbar  Styling*/
+
+nav.navbar {
+  padding: 3px;
+}
+
+a.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.nav-item, a.header-title.nav-link { 
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-right: 30px;
+}
+
+.header-title, a.dropdown-toggle.nav-link {
+  color: rgb(216, 234, 250) !important;
+}
+
+.header-title:hover, a.dropdown-toggle.nav-link:hover {
+  color: white !important;
+}
+
+.nav-dropdown {
+  margin-right: 20px;
+}
+
+div.dropdown-menu.show {
+  background-color: lightblue;
+  min-width: 200px;
+  font-size: 1.0em;
+}
+
+.logo {
+  height: 60px;
+  width: 75px;
+}
+
+
+/* Home Page Styling */
+
+.home-page-container {
+  display: flex;
+  height: calc(100vh - 66px);
+}
+
+.main-page-content {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+
+}
+.main-header-title {
+  font-size: 1.9em;
+  color: rgb(29, 29, 102);
+  margin-top: 75px;
+}
+
+
+/* Cards */
+
+.card-header-title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.secondary-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.card-section {
+  flex-direction: row;
+}
+
+.card-template-icon {
+  height: 400px;
+  padding-bottom: 50px;
+}
+
+/* Pictures */
+
+.pictures-header-title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.picture-template-icon {
+  height: 400px;
+  padding-bottom: 50px;
+}
