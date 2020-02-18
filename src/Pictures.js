@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Home.css';
-// import mainImage from '../public/vocab_wizard_main_img.png';
 import bullet from '../public/vw_bullet.png';
 import template1 from '../public/picture_template.jpg';
 import template2 from '../public/picture_template2.jpg';

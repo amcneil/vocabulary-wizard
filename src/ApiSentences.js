@@ -10,8 +10,8 @@ class ApiSentences extends Component {
     }
   }
   componentDidMount() {
-    console.log("mounted");
-    fetch("https://twinword-word-graph-dictionary.p.rapidapi.com/example/?entry=handle", {
+    console.log("props:", this.props);
+    fetch("https://twinword-word-graph-dictionary.p.rapidapi.com/example/?entry=" + this.props.vocabularyWord, {
       "method": "GET",
       "headers": {
         "x-rapidapi-host": "twinword-word-graph-dictionary.p.rapidapi.com",
@@ -19,12 +19,11 @@ class ApiSentences extends Component {
       }
     })
     .then(response => {
-      // console.log(response.json());
       return response.json();
     })
-    // .catch(err => {
-    //   console.log(err);
-    // })
+    .catch(err => {
+      console.log(err);
+    })
     .then(wordInfo => {
       console.log("wordInfo:", wordInfo);
       return wordInfo.example;
@@ -44,12 +43,11 @@ class ApiSentences extends Component {
         <ul>
           {this.state.items.map(item => (
             <li key={item}>
-              Word: {item}
+              {item}
             </li>
           ))}
         </ul>
       </div>
-
     );
   }
 }

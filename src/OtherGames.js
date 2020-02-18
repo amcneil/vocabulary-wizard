@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Home.css';
-// import mainImage from '../public/vocab_wizard_main_img.png';
 import bullet from '../public/vw_bullet.png';
 
 class OtherGames extends Component {

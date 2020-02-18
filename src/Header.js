@@ -9,7 +9,7 @@ export default () => {
   return (
     <div>
       <Navbar bg="info"  variant="dark" expand="lg">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="./home">
           <img src={logo} alt="Vocab Wizard" className="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -25,7 +25,7 @@ export default () => {
               <NavDropdown.Item href="./otherGames">Other Games</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Word Lists" className="header-title" id="basic-nav-dropdown">
-              <NavDropdown.Item>Elementary</NavDropdown.Item>
+              <NavDropdown.Header className="header-grades">Elementary</NavDropdown.Header>
               <NavDropdown.Divider />
               <NavDropdown.Item href="./comingSoon">Kindergarden</NavDropdown.Item>
               <NavDropdown.Item href="./comingSoon">First</NavDropdown.Item>
@@ -34,7 +34,7 @@ export default () => {
               <NavDropdown.Item href="./comingSoon">Fourth</NavDropdown.Item>
               <NavDropdown.Item href="./comingSoon">Fifth</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item>Middle and High</NavDropdown.Item>
+              <NavDropdown.Header className="header-grades">Middle and High</NavDropdown.Header>
               <NavDropdown.Divider />
               <NavDropdown.Item href="./comingSoon">Sixth</NavDropdown.Item>
               <NavDropdown.Item href="./comingSoon">Seventh</NavDropdown.Item>
@@ -44,10 +44,6 @@ export default () => {
               <NavDropdown.Item href="./comingSoon">Eleventh</NavDropdown.Item>
               <NavDropdown.Item href="./comingSoon">Twelfth</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item>Secondary</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="./comingSoon">College</NavDropdown.Item>
-              <NavDropdown.Item href="./comingSoon">Grad School</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Other Useful Links" className="header-title" id="basic-nav-dropdown">
               <NavDropdown.Item href="https://www.dictionary.com/">Dictonary.com</NavDropdown.Item>

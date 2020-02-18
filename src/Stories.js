@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Home.css';
-// import mainImage from '../public/vocab_wizard_main_img.png';
 import bullet from '../public/vw_bullet.png';
 
 class Stories extends Component {
@@ -13,10 +12,10 @@ class Stories extends Component {
             <div className="sentences-instruction-bullet">
               <img src={bullet} alt="bulletpoint" className="bulletpoint" />
               <span className="bullet-text">
-                 Using the vocabulary words, have students write a story or poem.  
-                 They should be given a length requirement and be told that they need to use a minimum number of vocabulary words,
-                 and the words must be used correctly.  
-                 You may allow students to work in small groups, or on their own. 
+                Using the vocabulary words, have students write a story or poem.  
+                They should be given a length requirement and be told that they need to use a minimum number of vocabulary words,
+                and the words must be used correctly.  
+                You may allow students to work in small groups, or on their own. 
               </span>
             </div>
             <div className="sentences-instruction-bullet">

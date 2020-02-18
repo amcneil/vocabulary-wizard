@@ -34,6 +34,17 @@
   font-size: 1.05em;
 }
 
+.sentences-examples {
+  background-color: lightblue;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.sentences-examples > ul > li {
+  /* list-style: none; */
+  text-align: left;
+}
+
 .Word-list-title {
   margin-top: 35px;
   margin-bottom: 12px;

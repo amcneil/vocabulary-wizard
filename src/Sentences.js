@@ -7,7 +7,10 @@ class Sentences extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {value: ''};
+    this.state = {
+      inputValue: '',
+      wordListVisible: false
+    };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -15,13 +18,17 @@ class Sentences extends Component {
 
   handleChange(event) {
     console.log("current state before:", this.state);
-    this.setState({value: event.target.value});
+    this.setState({
+      inputValue: event.target.value,
+      wordListVisible: false
+    });
     console.log("current state after:", this.state);
   }
 
   handleSubmit(event) {
-    alert('A name was submitted: ' + this.state.value);
     event.preventDefault();
+    this.setState({wordListVisible: true})
+    
   }
 
   render() {
@@ -54,29 +61,14 @@ class Sentences extends Component {
 
           <form onSubmit={this.handleSubmit}>
             <label>
-              Name:
-              <input type="text" value={this.state.value} onChange={this.handleChange} />
+              Input Vocabulary Word:
+              <input type="text" value={this.state.inputValue} onChange={this.handleChange} />
             </label>
-            <input type="submit" value="Submit" />
+            <input type="submit" className="submit-button word-list-submit" value="Submit" />
           </form>
 
-        {/* {this.state.value && () => {
-          <ApiSentences />
-        }} */}
+          {this.state.wordListVisible && <ApiSentences vocabularyWord={this.state.inputValue} />}
 
-          {/* <Form className="word-list-sentence-form">
-            <Field 
-              type="textarea" 
-              component={ApiSentences}
-              name="word-list" 
-              className="word-list-sentence-box"
-            />
-            <div>
-              <button type="submit" onClick={doStuff} className="submit-button word-list-submit">
-                Create Worksheet
-              </button>
-            </div>
-          </Form> */}
         </div>
       </div>
     );
