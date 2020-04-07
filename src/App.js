@@ -22,7 +22,6 @@ function App() {
           <Route path="/home/" exact component={Home} />
           <Route path="/cards/" exact component={Cards} />
           <Route path="/ComingSoon/" exact component={ComingSoon} />
-          <Route path="/crosswordPuzzle/" exact component={CrosswordPuzzle} />
           <Route path="/otherGames/" exact component={OtherGames} />
           <Route path="/pictures/" exact component={Pictures} />
           <Route path="/sentences/" exact component={Sentences} />

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import { uniqueId } from 'lodash';
 
-class ApiSentences extends Component {
+class ExampleSentences extends Component {
   
   constructor(props) {
     super(props);
@@ -19,7 +20,10 @@ class ApiSentences extends Component {
       }
     })
     .then(response => {
-      return response.json();
+      // console.log("this is here:", response.json());
+      const jsonData = response.json();
+        console.log(jsonData);
+      return jsonData;
     })
     .catch(err => {
       console.log(err);
@@ -29,7 +33,7 @@ class ApiSentences extends Component {
       return wordInfo.example;
     })
     .then(examples => {
-      console.log(`received data:`, examples);
+      console.log("received data:", examples);
       this.setState({
         isLoaded: true,
         items: examples,
@@ -42,7 +46,7 @@ class ApiSentences extends Component {
       <div className="sentences-examples">
         <ul>
           {this.state.items.map(item => (
-            <li key={item}>
+            <li key={uniqueId()}>
               {item}
             </li>
           ))}
@@ -52,4 +56,4 @@ class ApiSentences extends Component {
   }
 }
 
-export default ApiSentences;
+export default ExampleSentences;

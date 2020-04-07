@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Sentences.css';
 import bullet from '../public/vw_bullet.png';
-import ApiSentences from './ApiSentences';
+import ExampleSentences from './ExampleSentences';
 
 class Sentences extends Component {
 
@@ -46,7 +46,7 @@ class Sentences extends Component {
             <div className="sentences-instruction-bullet">
               <img src={bullet} alt="bulletpoint" className="bulletpoint" />
               <span className="bullet-text">
-                Once finished, click “Create Worksheet” and it will return a sentence for each word with the word removed. 
+                Once finished, click “Create" and it will return a sentence for each word with the word removed. 
                 It will also return a word bank. 
               </span> 
             </div>
@@ -64,10 +64,10 @@ class Sentences extends Component {
               Input Vocabulary Word:
               <input type="text" value={this.state.inputValue} onChange={this.handleChange} />
             </label>
-            <input type="submit" className="submit-button word-list-submit" value="Submit" />
+            <input type="submit" className="submit-button word-list-submit" value="Create" />
           </form>
 
-          {this.state.wordListVisible && <ApiSentences vocabularyWord={this.state.inputValue} />}
+          {this.state.wordListVisible && <ExampleSentences vocabularyWord={this.state.inputValue} />}
 
         </div>
       </div>

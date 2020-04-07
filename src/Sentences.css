@@ -61,6 +61,7 @@
 .word-list-submit {
   background-color: lightblue;
   border-radius: 4px;
+  margin-left: 10px;
 }
 
 .word-list-submit:hover {
@@ -70,5 +71,8 @@
 @media only screen and (max-width: 620px) {
   .word-list-sentence-box {
     width: 90vw;
+  }
+  .word-list-submit {
+    margin-bottom: 30px;
   }
 }
